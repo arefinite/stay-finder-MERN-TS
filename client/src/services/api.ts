@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { LoginFormSchema, RegisterFormSchema } from '../validators/FormSchema'
 
-const baseURL = import.meta.env.VITE_API_URL || ''
+const baseURL = import.meta.env.VITE_API_URL || '/api/v1'
 
 const api = axios.create({
   baseURL,

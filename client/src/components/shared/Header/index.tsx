@@ -6,7 +6,7 @@ import { useContext } from 'react'
 
 const Header = () => {
   const { isLoggedIn } = useContext(AuthContext)
-  const { mutate: logoutMutate  } = useLogoutUser()
+  const { mutate: logoutMutate } = useLogoutUser()
   const handleLogout = () => {
     logoutMutate()
   }
@@ -21,7 +21,7 @@ const Header = () => {
             <h1 className='text-dark'>StayFinder</h1>
           </div>
         </Link>
-        <button onClick={handleLogout}>abc</button>
+
         <div className='flex items-center gap-6'>
           {isLoggedIn && (
             <ul className='flex space-x-6 text-dark'>
